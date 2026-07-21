@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Кунжут — доставка пп-еды</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="seed"></span> Кунжут</a>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="programs.html">Программы</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="checklist.html">Чек-лист</a>
+    </nav>
+    <div class="header-actions">
+      <a href="menu.html" class="cart-pill">Корзина <span class="count cart-count">0</span></a>
+      <button class="burger" aria-label="Меню"></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="seed-scatter"></div>
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">Доставка пп-еды · Каждый день</span>
+      <h1>Питание, собранное<br>по <em>зерну</em>, а не по правилам</h1>
+      <p class="lead">Кунжут — небольшая кухня, которая готовит сбалансированные рационы без сахара и лишнего масла. Собираем меню под вашу цель: похудение, форма или набор массы.</p>
+      <div class="hero-cta">
+        <a href="menu.html" class="btn btn-primary">Смотреть меню</a>
+        <a href="programs.html" class="btn btn-outline">Подобрать программу</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="plate"></div>
+      <div class="stat-badge top"><b>'❓'</b>ккал / порция</div>
+      <div class="stat-badge bottom"><b>'❓'</b>от заказа до стола</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Почему Кунжут</span>
+      <h2>Еда, за которую не нужно оправдываться</h2>
+      <p>Три вещи, на которых держится каждый заказ — <em><b>состав, расчёт и время.</b></em></p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="icon-num">КБЖУ · на этикетке</span>
+        <h3>Точный расчёт</h3>
+        <p>У каждого блюда указаны калории, белки, жиры и углеводы — без «примерно».</p>
+      </div>
+      <div class="card">
+        <span class="icon-num">Готовим · ежедневно</span>
+        <h3>Без заморозки</h3>
+        <p>Блюда готовятся под доставку на завтра, а не хранятся неделями на складе.</p>
+      </div>
+      <div class="card">
+        <span class="icon-num">Кунжут · в основе</span>
+        <h3>Полезные жиры</h3>
+        <p>Кунжутное масло и семена вместо рафинированного масла в большинстве блюд.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Как это устроено</span>
+      <h2>От заказа до доставки — три шага</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="icon-num">01</span>
+        <h3>Выберите программу</h3>
+        <p>Похудение, поддержание формы или набор массы — с готовым расчётом калорий на день.</p>
+      </div>
+      <div class="card">
+        <span class="icon-num">02</span>
+        <h3>Соберите меню</h3>
+        <p>Замените любое блюдо на другое из того же приёма пищи — без доплаты.</p>
+      </div>
+      <div class="card">
+        <span class="icon-num">03</span>
+        <h3>Получите доставку</h3>
+        <p>Привозим в удобный интервал, еда уже промаркирована по дням и приёмам пищи.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Калькулятор КБЖУ</span>
+      <h2>Узнайте свою дневную норму</h2>
+      <p>Прототип</p>
+    </div>
+    <div class="calc-box">
+      <form class="calc-form">
+        <span class="calc-note">Калькулятор КБЖУ · прототип</span>
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="gender">Пол</label>
+            <select id="gender" name="gender">
+              <option value="female">Женский</option>
+              <option value="male">Мужской</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="age">Возраст</label>
+            <input type="number" id="age" name="age" placeholder="25" min="10" max="100">
+          </div>
+          <div class="form-row">
+            <label for="height">Рост, см</label>
+            <input type="number" id="height" name="height" placeholder="170" min="100" max="230">
+          </div>
+          <div class="form-row">
+            <label for="weight">Вес, кг</label>
+            <input type="number" id="weight" name="weight" placeholder="65" min="30" max="250">
+          </div>
+          <div class="form-row">
+            <label for="activity">Активность</label>
+            <select id="activity" name="activity">
+              <option value="1.2">Минимальная</option>
+              <option value="1.375">Лёгкая (1-3 раза в неделю)</option>
+              <option value="1.55" selected>Средняя (3-5 раз в неделю)</option>
+              <option value="1.725">Высокая (6-7 раз в неделю)</option>
+              <option value="1.9">Очень высокая</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="goal">Цель</label>
+            <select id="goal" name="goal">
+              <option value="lose">Похудение</option>
+              <option value="maintain" selected>Поддержание</option>
+              <option value="gain">Набор массы</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Рассчитать</button>
+      </form>
+      <div class="calc-result">
+        <p class="calc-placeholder">Заполните форму слева — здесь появится расчёт нормы.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Документы</span>
+      <h2>Сертификаты и лицензии</h2>
+      <p>Подтверждаем качество и безопасность производства официальными документами.</p>
+    </div>
+    <div class="cert-grid">
+      <!-- Место под сертификат №1. Чтобы вставить картинку — добавь внутрь .cert-photo
+           тег <img src="images/cert1.jpg" alt="Название сертификата"> вместо .placeholder-text -->
+      <div class="cert-card">
+        <div class="cert-photo"><span class="placeholder-text">Место под сертификат</span></div>
+        <p class="cert-name">Сертификат 1</p>
+      </div>
+      <!-- Место под сертификат №2 -->
+      <div class="cert-card">
+        <div class="cert-photo"><span class="placeholder-text">Место под сертификат</span></div>
+        <p class="cert-name">Сертификат 2</p>
+      </div>
+      <!-- Место под сертификат №3 -->
+      <div class="cert-card">
+        <div class="cert-photo"><span class="placeholder-text">Место под сертификат</span></div>
+        <p class="cert-name">Сертификат 3</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <div class="seed-scatter"></div>
+      <h2>Готовы попробовать первую неделю?</h2>
+      <p>Соберите меню сами или доверьте это нашему нутрициологу — бесплатно при первом заказе.</p>
+      <a href="menu.html" class="btn btn-primary">Собрать меню</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="seed"></span> Кунжут</a>
+        <p>Доставка сбалансированной еды для тех, кто считает КБЖУ, а не калории на глаз.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="programs.html">Программы</a></li>
+          <li><a href="about.html">О нас</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+79873575087">+7 (987) 357-50-87</a></li>
+          <li><a href="mailto:romamorozov05@mail.ru">romamorozov05@mail.ru</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Соцсети</h4>
+        <ul>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">VK</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Кунжут. Все права защищены.</span>
+      <span>Саратов и область</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

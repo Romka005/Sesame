@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Меню — Кунжут</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="seed"></span> Кунжут</a>
+    <nav class="main-nav">
+      <a href="index.html">Главная</a>
+      <a href="menu.html" class="active">Меню</a>
+      <a href="programs.html">Программы</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="checklist.html">Чек-лист</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#cart" class="cart-pill">Корзина <span class="count cart-count">0</span></a>
+      <button class="burger" aria-label="Меню"></button>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="breadcrumb">Меню недели</span>
+    <h1>Каждое блюдо — с расчётом КБЖУ</h1>
+    <p>Готовим на завтра каждый день. Фильтруйте по приёму пищи и собирайте свою корзину справа.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-chip active" data-tag="Все">Всё меню</button>
+      <button class="filter-chip" data-tag="Завтрак">Завтраки</button>
+      <button class="filter-chip" data-tag="Обед">Обеды</button>
+      <button class="filter-chip" data-tag="Ужин">Ужины</button>
+      <button class="filter-chip" data-tag="Перекус">Перекусы</button>
+    </div>
+
+    <div class="menu-layout">
+      <div class="dish-grid"><!-- рендерится в js --></div>
+
+      <aside class="menu-sidebar">
+      <div class="cart-box" id="cart">
+        <span class="calc-note">Выбранные позиции</span>
+        <h3>Ваш заказ</h3>
+        <p class="hint">Добавляйте блюда — сумма посчитается автоматически.</p>
+        <div class="cart-lines">
+          <p class="cart-empty">Пока пусто — добавьте блюда из меню слева.</p>
+        </div>
+        <div class="cart-total"><span>Итого</span><span class="num">0 ₽</span></div>
+        <a href="contacts.html" class="btn btn-primary" style="width:100%">Оформить заказ</a>
+        <button class="cart-clear">Очистить корзину</button>
+      </div>
+
+      <div class="calc-box calc-compact" style="margin-top:24px;">
+      <span class="calc-note">Калькулятор КБЖУ · прототип</span>
+      <form class="calc-form">
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="gender-m">Пол</label>
+            <select id="gender-m" name="gender">
+              <option value="female">Женский</option>
+              <option value="male">Мужской</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="age-m">Возраст</label>
+            <input type="number" id="age-m" name="age" placeholder="25" min="10" max="100">
+          </div>
+          <div class="form-row">
+            <label for="height-m">Рост, см</label>
+            <input type="number" id="height-m" name="height" placeholder="170" min="100" max="230">
+          </div>
+          <div class="form-row">
+            <label for="weight-m">Вес, кг</label>
+            <input type="number" id="weight-m" name="weight" placeholder="65" min="30" max="250">
+          </div>
+          <div class="form-row">
+            <label for="activity-m">Активность</label>
+            <select id="activity-m" name="activity">
+              <option value="1.2">Минимальная</option>
+              <option value="1.375">Лёгкая</option>
+              <option value="1.55" selected>Средняя</option>
+              <option value="1.725">Высокая</option>
+              <option value="1.9">Очень высокая</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="goal-m">Цель</label>
+            <select id="goal-m" name="goal">
+              <option value="lose">Похудение</option>
+              <option value="maintain" selected>Поддержание</option>
+              <option value="gain">Набор массы</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Рассчитать норму</button>
+      </form>
+      <div class="calc-result">
+        <p class="calc-placeholder">Заполните форму — здесь появится расчёт нормы.</p>
+      </div>
+      </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="seed"></span> Кунжут</a>
+        <p>Доставка сбалансированной еды для тех, кто считает КБЖУ, а не калории на глаз.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="programs.html">Программы</a></li>
+          <li><a href="about.html">О нас</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+79873575087">+7 (987) 357-50-87</a></li>
+          <li><a href="mailto:romamorozov05@mail.ru">romamorozov05@mail.ru</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Соцсети</h4>
+        <ul>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">VK</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Кунжут. Все права защищены.</span>
+      <span>Саратов и область</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
