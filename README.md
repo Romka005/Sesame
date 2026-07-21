@@ -1,3 +1,3 @@
 # Sesame
 ## 🍽️ A website for healthy food delivery 🍽️
-👉[Launch the game](https://romka005.github.io/Sesame/)👈
+👉[View the website with delivery](https://romka005.github.io/Sesame/)👈
