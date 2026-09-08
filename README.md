@@ -1,3 +1,3 @@
 # Sesame
-## 🍽️ A website for healthy food delivery 🍽️
-👉[View the website with delivery](https://romka005.github.io/Sesame/)👈
+## 🍽️ Веб-сайт для доставки здоровой пищи 🍽️
+👉[Посмотреть сайт с доставкой](https://romka005.github.io/Sesame/)👈
